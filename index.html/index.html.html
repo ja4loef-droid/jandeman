@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_26a03bc7e25eabb8e5821d9e5d1b17c3 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_26a03bc7e25eabb8e5821d9e5d1b17c3" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_26a03bc7e25eabb8e5821d9e5d1b17c3 = L.map(
+                "map_26a03bc7e25eabb8e5821d9e5d1b17c3",
+                {
+                    center: [52.1, 5.3],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 6,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_8bd84ec48b0f3144e8c49acfe66669d0 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_26a03bc7e25eabb8e5821d9e5d1b17c3);
+        
+    
+            var marker_72cf33933ec95a7438a97f3eb852aad5 = L.marker(
+                [51.443, 5.436],
+                {}
+            ).addTo(map_26a03bc7e25eabb8e5821d9e5d1b17c3);
+        
+    
+        var popup_114bb20f60dcb7c70b131ba045107fe8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a02866edc8a557dd8c7cf6967295eab4 = $(`<div id="html_a02866edc8a557dd8c7cf6967295eab4" style="width: 100.0%; height: 100.0%;"><b>Klimrijk Brabant - Innovatie</b><br>Innovatie en conceptontwikkeling bij Klimrijk Brabant.</div>`)[0];
+            popup_114bb20f60dcb7c70b131ba045107fe8.setContent(html_a02866edc8a557dd8c7cf6967295eab4);
+        
+
+        marker_72cf33933ec95a7438a97f3eb852aad5.bindPopup(popup_114bb20f60dcb7c70b131ba045107fe8)
+        ;
+
+        
+    
+    
+            marker_72cf33933ec95a7438a97f3eb852aad5.bindTooltip(
+                `<div>
+                     Klimrijk Brabant - Innovatie
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cb65fb040b8b3656443662cb82d028f9 = L.marker(
+                [51.443, 5.436],
+                {}
+            ).addTo(map_26a03bc7e25eabb8e5821d9e5d1b17c3);
+        
+    
+        var popup_49b31f512e6a4f484a471df460f8d8f4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cdf6643e7e19ef72afe379e820719bcc = $(`<div id="html_cdf6643e7e19ef72afe379e820719bcc" style="width: 100.0%; height: 100.0%;"><b>Klimrijk Brabant - Onderhoud</b><br>Onderhoudswerkzaamheden bij Klimrijk Brabant.</div>`)[0];
+            popup_49b31f512e6a4f484a471df460f8d8f4.setContent(html_cdf6643e7e19ef72afe379e820719bcc);
+        
+
+        marker_cb65fb040b8b3656443662cb82d028f9.bindPopup(popup_49b31f512e6a4f484a471df460f8d8f4)
+        ;
+
+        
+    
+    
+            marker_cb65fb040b8b3656443662cb82d028f9.bindTooltip(
+                `<div>
+                     Klimrijk Brabant - Onderhoud
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f32ab1ecf24782a4f072665438ce4468 = L.marker(
+                [51.266, 4.854],
+                {}
+            ).addTo(map_26a03bc7e25eabb8e5821d9e5d1b17c3);
+        
+    
+        var popup_036ab3ad2a9571a80261499df1968217 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b3c2dc6d8cb3448233b07009d21f9ed5 = $(`<div id="html_b3c2dc6d8cb3448233b07009d21f9ed5" style="width: 100.0%; height: 100.0%;"><b>De Lilse Bergen</b><br>Projectwerkzaamheden bij recreatiepark De Lilse Bergen.</div>`)[0];
+            popup_036ab3ad2a9571a80261499df1968217.setContent(html_b3c2dc6d8cb3448233b07009d21f9ed5);
+        
+
+        marker_f32ab1ecf24782a4f072665438ce4468.bindPopup(popup_036ab3ad2a9571a80261499df1968217)
+        ;
+
+        
+    
+    
+            marker_f32ab1ecf24782a4f072665438ce4468.bindTooltip(
+                `<div>
+                     De Lilse Bergen
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ec96498d8eaaa8e28ebfeeebd050f06f = L.marker(
+                [52.05, 5.7],
+                {}
+            ).addTo(map_26a03bc7e25eabb8e5821d9e5d1b17c3);
+        
+    
+        var popup_da8c0e952cefaea4a469580d4ae57564 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_deee5ef96ad7ffa0017be47a5a4ab6b8 = $(`<div id="html_deee5ef96ad7ffa0017be47a5a4ab6b8" style="width: 100.0%; height: 100.0%;"><b>Maple Farm Adventures</b><br>Projecten bij Maple Farm Adventures (aanleg en onderhoud).</div>`)[0];
+            popup_da8c0e952cefaea4a469580d4ae57564.setContent(html_deee5ef96ad7ffa0017be47a5a4ab6b8);
+        
+
+        marker_ec96498d8eaaa8e28ebfeeebd050f06f.bindPopup(popup_da8c0e952cefaea4a469580d4ae57564)
+        ;
+
+        
+    
+    
+            marker_ec96498d8eaaa8e28ebfeeebd050f06f.bindTooltip(
+                `<div>
+                     Maple Farm Adventures
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_03bd2d3b9c7b4b0896678474c300ea80 = L.marker(
+                [55.945, 13.539],
+                {}
+            ).addTo(map_26a03bc7e25eabb8e5821d9e5d1b17c3);
+        
+    
+        var popup_4d0a19884884d6a86ef3874d5d019990 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_21d23d2da9c236eb27013f671c5a3cdb = $(`<div id="html_21d23d2da9c236eb27013f671c5a3cdb" style="width: 100.0%; height: 100.0%;"><b>Skånes Djurpark Zweden</b><br>Werkzaamheden in Skånes Djurpark, Zweden.</div>`)[0];
+            popup_4d0a19884884d6a86ef3874d5d019990.setContent(html_21d23d2da9c236eb27013f671c5a3cdb);
+        
+
+        marker_03bd2d3b9c7b4b0896678474c300ea80.bindPopup(popup_4d0a19884884d6a86ef3874d5d019990)
+        ;
+
+        
+    
+    
+            marker_03bd2d3b9c7b4b0896678474c300ea80.bindTooltip(
+                `<div>
+                     Skånes Djurpark Zweden
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1ef147902dd74bd230f1029ab7dc4fcb = L.marker(
+                [53.083, 10.0],
+                {}
+            ).addTo(map_26a03bc7e25eabb8e5821d9e5d1b17c3);
+        
+    
+        var popup_2a349de8548d6dec8b54a95841aadbfa = L.popup({"maxWidth": "100%"});
+
+        
+            var html_be8583d788c1e19b973e11a18ecd46ac = $(`<div id="html_be8583d788c1e19b973e11a18ecd46ac" style="width: 100.0%; height: 100.0%;"><b>Bispinger Heide Duitsland</b><br>Project in vakantiepark Bispinger Heide, Duitsland.</div>`)[0];
+            popup_2a349de8548d6dec8b54a95841aadbfa.setContent(html_be8583d788c1e19b973e11a18ecd46ac);
+        
+
+        marker_1ef147902dd74bd230f1029ab7dc4fcb.bindPopup(popup_2a349de8548d6dec8b54a95841aadbfa)
+        ;
+
+        
+    
+    
+            marker_1ef147902dd74bd230f1029ab7dc4fcb.bindTooltip(
+                `<div>
+                     Bispinger Heide Duitsland
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2147b6680f3c3ddab90699a65026c281 = L.marker(
+                [52.1, 5.3],
+                {}
+            ).addTo(map_26a03bc7e25eabb8e5821d9e5d1b17c3);
+        
+    
+        var popup_9b4ba5a4ee20b04f16d3a711268d7889 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_58f0994aed9f7a2364235806f4b42d3c = $(`<div id="html_58f0994aed9f7a2364235806f4b42d3c" style="width: 100.0%; height: 100.0%;"><b>In Alle Straten</b><br>Bouw van een compleet klimpark met hoge klimmuur, teambuilding en ziplines.</div>`)[0];
+            popup_9b4ba5a4ee20b04f16d3a711268d7889.setContent(html_58f0994aed9f7a2364235806f4b42d3c);
+        
+
+        marker_2147b6680f3c3ddab90699a65026c281.bindPopup(popup_9b4ba5a4ee20b04f16d3a711268d7889)
+        ;
+
+        
+    
+    
+            marker_2147b6680f3c3ddab90699a65026c281.bindTooltip(
+                `<div>
+                     In Alle Straten
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5c2abe114b7f1e29cdae8350ad9be55b = L.marker(
+                [51.558, 5.091],
+                {}
+            ).addTo(map_26a03bc7e25eabb8e5821d9e5d1b17c3);
+        
+    
+        var popup_a5cacd3aa6e0940e528b368b48e15b70 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2f3cca439a21f98e33a5b23cec28a02c = $(`<div id="html_2f3cca439a21f98e33a5b23cec28a02c" style="width: 100.0%; height: 100.0%;"><b>Netten Room Tilburg</b><br>Nettenproject in Tilburg.</div>`)[0];
+            popup_a5cacd3aa6e0940e528b368b48e15b70.setContent(html_2f3cca439a21f98e33a5b23cec28a02c);
+        
+
+        marker_5c2abe114b7f1e29cdae8350ad9be55b.bindPopup(popup_a5cacd3aa6e0940e528b368b48e15b70)
+        ;
+
+        
+    
+    
+            marker_5c2abe114b7f1e29cdae8350ad9be55b.bindTooltip(
+                `<div>
+                     Netten Room Tilburg
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_20042ab02540c3a898094b6fcaa309e5 = L.marker(
+                [52.509, 4.946],
+                {}
+            ).addTo(map_26a03bc7e25eabb8e5821d9e5d1b17c3);
+        
+    
+        var popup_4e57be056779aea44f2fd4d2aecfa2fb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f34d975dcd3ba37ff87345fd0b2def56 = $(`<div id="html_f34d975dcd3ba37ff87345fd0b2def56" style="width: 100.0%; height: 100.0%;"><b>Jumpskillz Purmerend</b><br>Project bij Jumpskillz Purmerend.</div>`)[0];
+            popup_4e57be056779aea44f2fd4d2aecfa2fb.setContent(html_f34d975dcd3ba37ff87345fd0b2def56);
+        
+
+        marker_20042ab02540c3a898094b6fcaa309e5.bindPopup(popup_4e57be056779aea44f2fd4d2aecfa2fb)
+        ;
+
+        
+    
+    
+            marker_20042ab02540c3a898094b6fcaa309e5.bindTooltip(
+                `<div>
+                     Jumpskillz Purmerend
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d1d04286011e66aa26ce315d97ac1511 = L.marker(
+                [52.3, 5.62],
+                {}
+            ).addTo(map_26a03bc7e25eabb8e5821d9e5d1b17c3);
+        
+    
+        var popup_b5d58db090887a423eaa0d106a0da21b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_852c1e8b00baa91d5ff0a3dadd8fc693 = $(`<div id="html_852c1e8b00baa91d5ff0a3dadd8fc693" style="width: 100.0%; height: 100.0%;"><b>Uitbreiding Klimbos Ermelo</b><br>Uitbreiding van Klimbos Ermelo.</div>`)[0];
+            popup_b5d58db090887a423eaa0d106a0da21b.setContent(html_852c1e8b00baa91d5ff0a3dadd8fc693);
+        
+
+        marker_d1d04286011e66aa26ce315d97ac1511.bindPopup(popup_b5d58db090887a423eaa0d106a0da21b)
+        ;
+
+        
+    
+    
+            marker_d1d04286011e66aa26ce315d97ac1511.bindTooltip(
+                `<div>
+                     Uitbreiding Klimbos Ermelo
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ad28beb8f15c1349e5453d2b5224c459 = L.marker(
+                [52.976, 6.75],
+                {}
+            ).addTo(map_26a03bc7e25eabb8e5821d9e5d1b17c3);
+        
+    
+        var popup_a7a57b6cd2838b17db2094fad001cce9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_566160fa06ca643a78908019ccf2a733 = $(`<div id="html_566160fa06ca643a78908019ccf2a733" style="width: 100.0%; height: 100.0%;"><b>Tokkelbaan Roompot HunzePark</b><br>Bouw van een tokkelbaan bij Roompot HunzePark.</div>`)[0];
+            popup_a7a57b6cd2838b17db2094fad001cce9.setContent(html_566160fa06ca643a78908019ccf2a733);
+        
+
+        marker_ad28beb8f15c1349e5453d2b5224c459.bindPopup(popup_a7a57b6cd2838b17db2094fad001cce9)
+        ;
+
+        
+    
+    
+            marker_ad28beb8f15c1349e5453d2b5224c459.bindTooltip(
+                `<div>
+                     Tokkelbaan Roompot HunzePark
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_73dd90676ffa1014235d3adebf05a4de = L.marker(
+                [51.78, 4.85],
+                {}
+            ).addTo(map_26a03bc7e25eabb8e5821d9e5d1b17c3);
+        
+    
+        var popup_26d28f23ce50a3f11e77bf3c2162f4db = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f8bb334bdc83a311a939eef5d8767919 = $(`<div id="html_f8bb334bdc83a311a939eef5d8767919" style="width: 100.0%; height: 100.0%;"><b>Klimpark Biesbosch</b><br>Projecten bij Klimpark Biesbosch.</div>`)[0];
+            popup_26d28f23ce50a3f11e77bf3c2162f4db.setContent(html_f8bb334bdc83a311a939eef5d8767919);
+        
+
+        marker_73dd90676ffa1014235d3adebf05a4de.bindPopup(popup_26d28f23ce50a3f11e77bf3c2162f4db)
+        ;
+
+        
+    
+    
+            marker_73dd90676ffa1014235d3adebf05a4de.bindTooltip(
+                `<div>
+                     Klimpark Biesbosch
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>
